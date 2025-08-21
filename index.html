@@ -1,46 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GENYON – Sistema Biológico Inteligente</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GENYON — The Organic Algorithm</title>
+  <meta name="description" content="GENYON SlimPro (AM) + ResetPro (PM). Science, AI & nature — evolving inside your body.">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0d0d0d;
-      color: #fff;
-      text-align: center;
-      padding: 40px;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 1.2em;
-      margin-bottom: 40px;
-      color: #ccc;
-    }
-    .btn {
-      background: #8c52ff;
-      color: white;
-      padding: 15px 30px;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-    img {
-      max-width: 320px;
-      margin: 20px auto;
-      display: block;
-    }
+    :root{--bg:#0b0b0c;--fg:#ffffff;--muted:#a1a1aa;--gold:#f5d042;--blue:#4ea8ff}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--fg);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;line-height:1.55}
+    .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+    header{min-height:90vh;display:flex;align-items:center}
+    h1{font-size:clamp(32px,6vw,56px);margin:0 0 10px}
+    p.lead{font-size:clamp(16px,3.2vw,22px);color:var(--muted);margin:0 0 24px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:14px 20px;border-radius:12px;font-weight:700;text-decoration:none;display:inline-block}
+    .btn.primary{background:#fff;color:#000}.btn.ghost{border:1px solid #fff;color:#fff}
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center}
+    .hero img{width:100%;height:auto;border-radius:18px;box-shadow:0 24px 64px rgba(0,0,0,.35)}
+    section{padding:72px 0} h2{font-size:clamp(24px,4vw,36px);margin:0 0 18px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .card{border:1px solid #242426;border-radius:14px;padding:18px;background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,0))}
+    .tag{font-weight:800;letter-spacing:.02em;font-size:14px;margin-bottom:4px}
+    .gold{color:var(--gold)} .blue{color:var(--blue)}
+    .why{background:#fff;color:#0f0f12}.why .card{border-color:#ececf0;background:#fff}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .gallery img{width:100%;border-radius:12px;border:1px solid #1f1f22;background:#111}
+    form{display:grid;gap:12px;max-width:520px;margin:16px auto 0}
+    input, textarea{background:#121216;color:#fff;border:1px solid #2a2a2e;border-radius:10px;padding:12px 14px;font-size:16px}
+    footer{padding:40px 0;text-align:center;color:#8e8e98;border-top:1px solid #1c1c1f}
+    @media (max-width:920px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-  <h1>GENYON</h1>
-  <p>Sistema biológico inteligente.<br>Medicina antes da medicina.</p>
-  <img src="A_product_packaging_photograph_features_two_GEN.png" alt="GENYON Packaging">
-  <a href="#" class="btn">Saiba Mais</a>
+  <!-- HERO -->
+  <header class="wrap">
+    <div class="hero">
+      <div>
+        <h1>GENYON is not a supplement. It’s an <em>organic algorithm</em>.</h1>
+        <p class="lead">Science, AI & nature — evolving inside your body.</p>
+        <div class="cta">
+          <a class="btn primary" href="#preorder">Pre-order Now</a>
+          <a class="btn ghost" href="#b2b">B2B Partner – NDA</a>
+        </div>
+      </div>
+      <div>
+        <img src="hero.png" alt="GENYON SlimPro & ResetPro">
+      </div>
+    </div>
+  </header>
+
+  <!-- SYSTEM -->
+  <section id="system" class="wrap">
+    <h2>The System</h2>
+    <div class="grid">
+      <div class="card"><div class="tag gold">SlimPro (AM)</div>
+        Morning activation — GLP-1 boost, metabolism ignition, satiety signals.</div>
+      <div class="card"><div class="tag blue">ResetPro (PM)</div>
+        Night reset — gut repair, immune balance, deep anti-inflammation.</div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section id="why" class="why">
+    <div class="wrap">
+      <h2>Why GENYON?</h2>
+      <div class="grid">
+        <div class="card"><strong>AI-Powered Formulation</strong><br>Data-driven development informed by clinical science.</div>
+        <div class="card"><strong>Patented Ingredients</strong><br>Morosil®, NovaSOL® Curcumin, Quercefit®, Bioperine®.</div>
+        <div class="card"><strong>Clinically Inspired</strong><br>GLP-1 activation + microbiome reset (AM/PM cycle).</div>
+        <div class="card"><strong>EU + FDA Ready</strong><br>Built for premium global compliance.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="wrap">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="gallery1.png" alt="GENYON Packaging 1">
+      <img src="gallery2.png" alt="GENYON Packaging 2">
+    </div>
+  </section>
+
+  <!-- CTA: PREORDER -->
+  <section id="preorder" class="wrap">
+    <h2>Join the Algorithm</h2>
+    <p>Quer fazer pré-encomenda ou parceria?</p>
+    <div class="cta" style="justify-content:center">
+      <a class="btn primary" href="mailto:ceo@genyon.eu?subject=GENYON%20Preorder">Pre-order</a>
+      <a id="b2b" class="btn ghost" href="mailto:ceo@genyon.eu?subject=GENYON%20B2B%20NDA">B2B / NDA</a>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO DE CONTACTO (mailto) -->
+  <section class="wrap">
+    <h2>Contact</h2>
+    <form action="mailto:ceo@genyon.eu" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Nome" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" rows="4" placeholder="Mensagem" required></textarea>
+      <button class="btn primary" type="submit">Enviar</button>
+    </form>
+    <p class="lead" style="text-align:center;margin-top:8px">Ou escreve para <a href="mailto:ceo@genyon.eu">ceo@genyon.eu</a></p>
+  </section>
+
+  <footer>
+    GENYON Group — Premium Nutraceutical Systems · © 2025
+  </footer>
 </body>
-</html>
+</html>>
